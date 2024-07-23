@@ -3,7 +3,7 @@ from flask import Flask, request
 import os
 from youbot import bot  # Import the bot instance
 
-WEBHOOK_URL = 'https://<your-domain>/bot'  # Replace <your-domain> with your actual domain
+WEBHOOK_URL = 'https://redmoonutubetranscriptor.onrender.com/bot'  # Replace <your-domain> with your actual domain
 
 app = Flask(__name__)
 
