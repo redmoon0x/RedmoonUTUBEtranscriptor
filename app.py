@@ -22,5 +22,9 @@ def index():
 
 if __name__ == '__main__':
     bot.remove_webhook()
-    bot.set_webhook(url=WEBHOOK_URL)
+    time.sleep(1)  # Ensure the removal is processed
+    response = bot.set_webhook(url=WEBHOOK_URL)
+    if response:  # Log the response to see if the webhook is set successfully
+        print("Webhook set successfully.")
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+
