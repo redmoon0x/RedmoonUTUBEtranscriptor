@@ -125,4 +125,4 @@ def fetch_transcript(message):
         bot.reply_to(message, "Sorry, could not fetch the transcript. Please try again later. 🚫")
         bot.send_message(LOG_CHANNEL_ID, f"Error with user {chat_id}: {str(e)}")
 
-bot.polling()
+
